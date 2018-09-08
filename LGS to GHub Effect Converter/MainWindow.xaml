@@ -5,8 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LGS2GHub"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="LGS to GHub Effect Converter" Height="500" Width="550" FontSize="14">
+    <Grid Margin="4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <GroupBox Grid.Row="0" Grid.ColumnSpan="3" Margin="4" Header="Choose custom LGS effect below or browse:">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <ComboBox Grid.Row="0" Grid.Column="0" Margin="4" Text="&lt;No custom LGS effects found&gt;" />
+                <TextBlock Grid.Row="0" Grid.Column="1" Margin="4" HorizontalAlignment="Right" />
+                <TextBox Grid.Row="1" Grid.Column="0" Margin="4" />
+                <Button Grid.Row="1" Grid.Column="1" Margin="4" Padding="25,4">Browse</Button>
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Row="1" Grid.ColumnSpan="3" Margin="4,8" Header="Select output option:">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <RadioButton Grid.Row="0" Grid.ColumnSpan="2" VerticalContentAlignment="Center" IsEnabled="False" Margin="4">Import into G Hub</RadioButton>
+                <ListBox Grid.Row="1" Grid.ColumnSpan="2" IsEnabled="False" Margin="4,0" />
+                <TextBox Grid.Row="2" Grid.ColumnSpan="2" Text="&lt;No G Hub settings file found&gt;" IsEnabled="False" Margin="4,-1,4,4" />
+                <RadioButton Grid.Row="3" Grid.ColumnSpan="2" VerticalContentAlignment="Center" IsChecked="True" Margin="4,8,4,4">Save to JSON file</RadioButton>
+                <TextBox Grid.Row="4" Grid.Column="0" Margin="4,0,4,4" />
+                <Button Grid.Row="4" Grid.Column="1" Margin="4,0,4,4" Padding="25,4">Browse</Button>
+            </Grid>
+        </GroupBox>
+        <Button Grid.Row="2" Grid.Column="1" Margin="4" Padding="8">Convert!</Button>
     </Grid>
 </Window>
