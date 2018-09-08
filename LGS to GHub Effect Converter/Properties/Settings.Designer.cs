@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LGS_to_GHub_Effect_Converter.Properties
+namespace LGS2GHub.Properties
 {
 
 

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LGS_to_GHub_Effect_Converter
+namespace LGS2GHub
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace LGS_to_GHub_Effect_Converter
+namespace LGS2GHub
 {
     /// <summary>
     /// Interaction logic for App.xaml
